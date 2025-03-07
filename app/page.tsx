@@ -1,6 +1,10 @@
+// Source: app/page.tsx
+
 import { Poppins } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { LoginButon } from "@/components/auth/login-button";
 const font = Poppins({
     subsets: ["latin"],
     weight: ["600"]
@@ -14,7 +18,12 @@ export default function Home() {
                     "text-6xl font-semibold text-white drop-shadow-md",
                     font.className
                     )}>🔐 Auth</h1>
-                <p className="text-white text-lg">A simple authentication service</p>
+                <p className="text-white text-lg">A simple authentication services</p>
+                <LoginButon>
+                    <Button variant={"secondary"} size={"lg"}>
+                        Sign in
+                    </Button>
+                </LoginButon>
             </div>
         </main>
     );

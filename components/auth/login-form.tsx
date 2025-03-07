@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FormError } from "../form-error";
+import { FormSuccess } from "../form-success";
 
 export const LoginForm = ( ) => {
 
@@ -72,6 +73,7 @@ export const LoginForm = ( ) => {
                         />
                     </div>
                     <FormError message="Something went wrong!" />
+                    <FormSuccess message="Form submitted successfully!" />
                     <Button
                         type="submit"
                         className="w-full"

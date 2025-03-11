@@ -9,7 +9,7 @@ type LoginButtonProps = {
     asChild?: boolean;
 };
 
-export const LoginButon = ({ children, mode = "redirect" , asChild }: LoginButtonProps) => {
+export const LoginButon = ({ children, mode = "redirect" }: LoginButtonProps) => {
 
     const router = useRouter();
 
